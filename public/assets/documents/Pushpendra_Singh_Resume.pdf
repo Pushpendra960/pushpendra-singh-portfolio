@@ -1,0 +1,89 @@
+%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >> endobj
+4 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+5 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> endobj
+6 0 obj << /Length 7877 >> stream
+BT /F2 18 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 795 Tm (PUSHPENDRA SINGH) Tj ET
+BT /F1 9.8 Tf 0.33 0.40 0.49 rg 1 0 0 1 50 777 Tm (Cloud Computing Student  |  Backend Development Enthusiast  |  AI Automation Builder) Tj ET
+BT /F1 8.8 Tf 0.25 0.25 0.25 rg 1 0 0 1 50 761 Tm (Greater Noida, Uttar Pradesh, India   |   singhpushpendra092006@gmail.com) Tj ET
+BT /F1 8.8 Tf 0.25 0.25 0.25 rg 1 0 0 1 50 749 Tm (LinkedIn: linkedin.com/in/pushpendrasingh9996   |   GitHub: github.com/Pushpendra960) Tj ET
+q 0.8 w 0.75 0.74 0.70 RG 50 740 m 545 740 l S Q
+BT /F2 9.8 Tf 0.33 0.40 0.49 rg 1 0 0 1 50 722 Tm (SUMMARY) Tj ET
+q 0.6 w 0.85 0.84 0.81 RG 50 718 m 545 718 l S Q
+BT /F1 8.8 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 706 Tm (B.Tech Computer Science and Engineering student specializing in Cloud Computing at IILM University,) Tj ET
+BT /F1 8.8 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 694 Tm (Greater Noida \(2025-2029, CGPA 8.03\). Focused on backend engineering with Java, Spring Boot, and MySQL,) Tj ET
+BT /F1 8.8 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 682 Tm (practical AWS cloud exposure, and applied AI workflow automation using LLM APIs and Google Apps Script.) Tj ET
+BT /F2 9.8 Tf 0.33 0.40 0.49 rg 1 0 0 1 50 662 Tm (EDUCATION) Tj ET
+q 0.6 w 0.85 0.84 0.81 RG 50 658 m 545 658 l S Q
+BT /F2 9.3 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 646 Tm (B.Tech in Computer Science & Engineering \(Specialization: Cloud Computing\)) Tj ET
+BT /F1 8.8 Tf 0.42 0.42 0.42 rg 1 0 0 1 490 646 Tm (2025 - 2029) Tj ET
+BT /F1 8.6 Tf 0.42 0.42 0.42 rg 1 0 0 1 50 634 Tm (IILM University, Greater Noida, India  |  Current CGPA: 8.03  |  Highlight: 98/100 in DECO) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 622 Tm (Coursework: DSA, DBMS, Computer Networks, Operating Systems, Cloud Computing, Java Programming) Tj ET
+BT /F2 9.8 Tf 0.33 0.40 0.49 rg 1 0 0 1 50 602 Tm (TECHNICAL SKILLS) Tj ET
+q 0.6 w 0.85 0.84 0.81 RG 50 598 m 545 598 l S Q
+BT /F2 8.8 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 586 Tm (Backend & Databases:) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 158 586 Tm (Java \(Intermediate\), MySQL / SQL \(Advanced\), REST APIs \(Intermediate\),) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 158 574 Tm (DBMS \(Intermediate\), Spring Boot \(Beginner\)) Tj ET
+BT /F2 8.8 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 560 Tm (Cloud & DevOps:) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 158 560 Tm (AWS Practical Exposure \(EC2, S3, RDS, DynamoDB, VPC, IAM, Lambda,) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 158 548 Tm (Route 53, CloudFront, ELB, ASG\), Linux, Docker, Git & GitHub) Tj ET
+BT /F2 8.8 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 534 Tm (Applied AI & CS Core:) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 158 534 Tm (Generative AI \(Intermediate\), LLM APIs, Google Apps Script,) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 158 522 Tm (Computer Networks \(Intermediate\), DSA Working Knowledge) Tj ET
+BT /F2 9.8 Tf 0.33 0.40 0.49 rg 1 0 0 1 50 502 Tm (PERSONAL PROJECTS) Tj ET
+q 0.6 w 0.85 0.84 0.81 RG 50 498 m 545 498 l S Q
+BT /F2 9.1 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 486 Tm (Daily LinkedIn News Agent  |  Google Apps Script, Google Sheets, Gemini API) Tj ET
+BT /F1 8.3 Tf 0.42 0.42 0.42 rg 1 0 0 1 472 486 Tm (Working System) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 474 Tm (- Built an automated daily technology briefing workflow that collects news, summarizes via Gemini) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 463 Tm (  API, generates accompanying imagery, and delivers scheduled daily email briefings.) Tj ET
+BT /F2 9.1 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 446 Tm (FixMyCampus 2.0  |  Google AI Studio, Google Apps Script, Google Sheets, GenAI) Tj ET
+BT /F1 8.3 Tf 0.42 0.42 0.42 rg 1 0 0 1 456 446 Tm (Functional Prototype) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 434 Tm (- Built an AI-assisted campus issue reporting and routing prototype with photo uploads, AI issue) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 423 Tm (  classification, department suggestions, unique ticket IDs, notifications, and status tracking.) Tj ET
+BT /F2 9.1 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 406 Tm (CampusHire  |  Java 21, Spring Boot 4.1.1, MySQL 8.0, Spring Data JPA, JWT) Tj ET
+BT /F1 8.3 Tf 0.42 0.42 0.42 rg 1 0 0 1 456 406 Tm (Backend Implemented) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 394 Tm (- Implemented backend architecture for a placement platform with student CRUD APIs, DTOs, global) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 383 Tm (  exception handling, BCrypt hashing, and JWT auth filter \(frontend & deployment pending\).) Tj ET
+BT /F2 9.1 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 366 Tm (Smart Attendance  |  Supabase, Digital Attendance Workflow) Tj ET
+BT /F1 8.3 Tf 0.42 0.42 0.42 rg 1 0 0 1 474 366 Tm (In Development) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 354 Tm (- Prepared frontend UI and working Supabase integration; face recognition remains pending.) Tj ET
+BT /F2 9.8 Tf 0.33 0.40 0.49 rg 1 0 0 1 50 334 Tm (INTERNSHIP EXPERIENCE) Tj ET
+q 0.6 w 0.85 0.84 0.81 RG 50 330 m 545 330 l S Q
+BT /F2 9.1 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 318 Tm (Web Development Intern  -  Thiranex \(Remote / Project-Based\)) Tj ET
+BT /F1 8.3 Tf 0.42 0.42 0.42 rg 1 0 0 1 438 318 Tm (29 Jul 2026 - 28 Aug 2026) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 306 Tm (- Completed 5 progressive deliverables: Semantic HTML5 Portfolio, Responsive CSS3 Interface,) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 295 Tm (  To-Do App \(LocalStorage\), Weather Dashboard \(Fetch API\), and NexStore \(ID: THX-JUL2926-236\).) Tj ET
+BT /F2 9.1 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 278 Tm (C++ Programming Intern  -  CodeAlpha \(Virtual Internship\)) Tj ET
+BT /F1 8.3 Tf 0.42 0.42 0.42 rg 1 0 0 1 438 278 Tm (01 Aug 2026 - 30 Aug 2026) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 266 Tm (- Documented implementations of a file-backed Login & Registration System and a 9x9 recursive) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 255 Tm (  backtracking Sudoku Solver in C++ \(ID: CA/DF1/228366; Completion Certificate & LoR\).) Tj ET
+BT /F2 9.8 Tf 0.33 0.40 0.49 rg 1 0 0 1 50 235 Tm (VERIFIED CREDENTIALS & CERTIFICATIONS) Tj ET
+q 0.6 w 0.85 0.84 0.81 RG 50 231 m 545 231 l S Q
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 219 Tm (- Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate - Oracle University \(2025-2027\)) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 207 Tm (- Gemini Certified Student \(University\) - Google for Education \(Oct 2025 - Oct 2028\)) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 195 Tm (- Google Cloud Computing Foundations: Cloud Computing Fundamentals - Google Cloud \(Apr 2026\)) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 183 Tm (- Cloud Computing Fundamentals & Artificial Intelligence Fundamentals - IBM SkillsBuild \(2026\)) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 171 Tm (- Build & Deploy Apps with Google AI Studio - GUVI \(Apr 2026\)  |  Claude 101 - Anthropic \(May 2026\)) Tj ET
+BT /F2 9.8 Tf 0.33 0.40 0.49 rg 1 0 0 1 50 150 Tm (ACHIEVEMENTS & COMMUNITY INVOLVEMENT) Tj ET
+q 0.6 w 0.85 0.84 0.81 RG 50 146 m 545 146 l S Q
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 134 Tm (- 1st Position: World Creativity & Innovation Day \(Model Exhibition\), IIC, IILM University \(Apr 2026\)) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 122 Tm (- 2nd Position: IGNITE 2K26 Model Presentation \(Viksit Bharat Abhiyan 2047\), IILM University \(Apr 2026\)) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 110 Tm (- Academic Highlight: 98/100 in DECO \(highest marks across the college in the previous semester\)) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 98 Tm (- Leadership & Participation: Former Joint Secretary at E-Cell \(First Year\); IEEE Club Member;) Tj ET
+BT /F1 8.6 Tf 0.14 0.14 0.14 rg 1 0 0 1 50 86 Tm (  Volunteer \(E-Cell Ideathon, IGNITE, AURIX AI Ideathon\); Participant in SIH 2026 & AURIX 2026.) Tj ET
+endstream endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000321 00000 n 
+0000000396 00000 n 
+trailer << /Size 7 /Root 1 0 R >>
+startxref
+8325
+%%EOF
