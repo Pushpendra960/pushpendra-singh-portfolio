@@ -1,25 +1,28 @@
 @import "tailwindcss";
 
 @theme {
+  --font-display: "Syne", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-serif: "Fraunces", Georgia, serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 
-  --color-canvas: #F7F6F2;
-  --color-surface: #FFFFFF;
-  --color-ink: #242424;
-  --color-ink-muted: #6B6B6B;
-  --color-navy: #53677D;
-  --color-accent: #A68A64;
-  --color-hairline: #E5E2DB;
+  --color-canvas: #08090D;
+  --color-canvas-elevated: #0C0E14;
+  --color-surface: #11141D;
+  --color-surface-hover: #161A26;
+  --color-ink: #F4F4F5;
+  --color-ink-muted: #94A3B8;
+  --color-accent: #38BDF8;
+  --color-accent-soft: #7DD3FC;
+  --color-gold: #E2B76E;
 }
 
 @layer base {
   html {
     font-family: var(--font-sans);
-    background-color: #F7F6F2;
-    color: #242424;
-    scroll-padding-top: 5.5rem;
+    background-color: #08090D;
+    color: #F4F4F5;
+    scroll-padding-top: 5.25rem;
+    color-scheme: dark;
   }
 
   h1, h2, h3 {
@@ -27,18 +30,372 @@
   }
 
   :focus-visible {
-    outline: 2px solid #53677D;
+    outline: 2px solid #38BDF8;
     outline-offset: 2px;
   }
+}
+
+.font-display {
+  font-family: var(--font-display);
 }
 
 .tabular-nums {
   font-variant-numeric: tabular-nums;
 }
 
+/* =====================================================
+   BACKGROUND DEPTH LAYERS (GPU-Composited)
+   ===================================================== */
+
+.bg-arch-grid {
+  background-image:
+    linear-gradient(to right, rgba(56, 189, 248, 0.055) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 189, 248, 0.055) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+@keyframes grid-drift {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(56px, 56px, 0);
+  }
+}
+
+.animate-grid-drift {
+  animation: grid-drift 22s linear infinite;
+  will-change: transform;
+}
+
+.bg-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.045'/%3E%3C/svg%3E");
+}
+
+@keyframes ambient-drift {
+  0%, 100% {
+    opacity: 0.55;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    opacity: 0.85;
+    transform: translate3d(40px, -24px, 0) scale(1.08);
+  }
+  66% {
+    opacity: 0.65;
+    transform: translate3d(-24px, 18px, 0) scale(0.97);
+  }
+}
+
+.animate-ambient-glow {
+  animation: ambient-drift 13s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+@keyframes ambient-drift-alt {
+  0%, 100% {
+    opacity: 0.4;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    opacity: 0.72;
+    transform: translate3d(-36px, 22px, 0) scale(1.07);
+  }
+}
+
+.animate-ambient-glow-alt {
+  animation: ambient-drift-alt 16s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+/* Subtle floating micro light points */
+@keyframes particle-float {
+  0%, 100% {
+    opacity: 0.2;
+    transform: translate3d(0, 0, 0) scale(0.85);
+  }
+  50% {
+    opacity: 0.78;
+    transform: translate3d(10px, -26px, 0) scale(1.15);
+  }
+}
+
+.animate-particle {
+  animation: particle-float var(--p-dur, 8s) ease-in-out var(--p-delay, 0s) infinite;
+  will-change: transform, opacity;
+}
+
+/* =====================================================
+   CONTINUOUS ORGANIC FLOATING MOTION (Varied Phases)
+   ===================================================== */
+
+@keyframes float-portrait {
+  0%, 100% {
+    transform: perspective(1000px) translate3d(0, 0, 0) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  33% {
+    transform: perspective(1000px) translate3d(-4px, -11px, 8px) rotateX(1.6deg) rotateY(-1.8deg) rotateZ(0.45deg);
+  }
+  66% {
+    transform: perspective(1000px) translate3d(4px, -6px, 4px) rotateX(-1.2deg) rotateY(1.6deg) rotateZ(-0.4deg);
+  }
+}
+
+.animate-float-portrait {
+  animation: float-portrait 6.8s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes float-name {
+  0%, 100% {
+    transform: perspective(1100px) translate3d(0, 0, 0) rotateX(0deg);
+  }
+  50% {
+    transform: perspective(1100px) translate3d(0, -8px, 12px) rotateX(2.4deg);
+  }
+}
+
+.animate-float-name {
+  animation: float-name 5.4s ease-in-out 0.9s infinite;
+  will-change: transform;
+}
+
+@keyframes float-win-1 {
+  0%, 100% {
+    transform: perspective(900px) translate3d(0, 0, 0) rotateX(2deg) rotateY(-4deg) rotateZ(-1deg);
+  }
+  50% {
+    transform: perspective(900px) translate3d(6px, -14px, 18px) rotateX(-3deg) rotateY(3deg) rotateZ(1.2deg);
+  }
+}
+
+.animate-float-win-1 {
+  animation: float-win-1 5.6s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes float-win-2 {
+  0%, 100% {
+    transform: perspective(900px) translate3d(0, 0, 0) rotateX(-2deg) rotateY(5deg) rotateZ(1.4deg);
+  }
+  45% {
+    transform: perspective(900px) translate3d(-8px, -12px, 14px) rotateX(3deg) rotateY(-3deg) rotateZ(-1deg);
+  }
+  80% {
+    transform: perspective(900px) translate3d(4px, 5px, 6px) rotateX(1deg) rotateY(2deg) rotateZ(0.6deg);
+  }
+}
+
+.animate-float-win-2 {
+  animation: float-win-2 7.1s ease-in-out 0.6s infinite;
+  will-change: transform;
+}
+
+@keyframes float-win-3 {
+  0%, 100% {
+    transform: perspective(900px) translate3d(0, 0, 0) rotateX(2.5deg) rotateY(3deg) rotateZ(-1.2deg);
+  }
+  50% {
+    transform: perspective(900px) translate3d(10px, -11px, 16px) rotateX(-2deg) rotateY(-4deg) rotateZ(1.1deg);
+  }
+}
+
+.animate-float-win-3 {
+  animation: float-win-3 6.3s ease-in-out 1.1s infinite;
+  will-change: transform;
+}
+
+@keyframes float-vertical {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotateZ(0deg);
+  }
+  50% {
+    transform: translate3d(0, -11px, 6px) rotateZ(1.4deg);
+  }
+}
+
+.animate-float-vertical {
+  animation: float-vertical 5.4s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes float-horizontal {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotateZ(0deg);
+  }
+  50% {
+    transform: translate3d(11px, -7px, 8px) rotateZ(-1.6deg);
+  }
+}
+
+.animate-float-horizontal {
+  animation: float-horizontal 6.9s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes float-orbit {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate3d(-8px, -11px, 10px) rotate(-1.8deg);
+  }
+  66% {
+    transform: translate3d(8px, -5px, 5px) rotate(1.6deg);
+  }
+}
+
+.animate-float-orbit {
+  animation: float-orbit 8.4s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Continuous subtle rotating conic border highlight */
+@keyframes border-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-border-spin {
+  animation: border-spin 11s linear infinite;
+  will-change: transform;
+}
+
+/* Subtle diagonal light reflection sweep on hover */
+.card-sheen {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-sheen::after {
+  content: "";
+  position: absolute;
+  inset: -40% auto -40% -85%;
+  width: 55%;
+  transform: skewX(-22deg) translate3d(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(56, 189, 248, 0.08) 50%,
+    transparent 100%
+  );
+  pointer-events: none;
+  transition: transform 650ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card-sheen:hover::after {
+    transform: skewX(-22deg) translate3d(420%, 0, 0);
+  }
+}
+
+/* Tactile micro-interaction utility for buttons & interactive controls */
+.btn-tactile {
+  transition:
+    transform 180ms cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    box-shadow 220ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-tactile:hover {
+    transform: translate3d(0, -2px, 0);
+  }
+}
+
+.btn-tactile:active {
+  transform: translate3d(0, 0, 0) scale(0.97);
+}
+
+/* Pause floating chip wave cleanly when user hovers to inspect */
+.hover-pause:hover {
+  animation-play-state: paused;
+}
+
+/* Energy light sweep passing across display typography */
+@keyframes text-light-sweep {
+  0% {
+    background-position: 180% 50%;
+  }
+  100% {
+    background-position: -120% 50%;
+  }
+}
+
+.hero-name-sheen {
+  background-image: linear-gradient(
+    110deg,
+    #f4f4f5 0%,
+    #f4f4f5 36%,
+    #7dd3fc 48%,
+    #ffffff 52%,
+    #38bdf8 57%,
+    #f4f4f5 68%,
+    #e2e8f0 100%
+  );
+  background-size: 240% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: text-light-sweep 7.5s ease-in-out 1.1s infinite;
+}
+
+/* Holographic portrait reflection pass */
+@keyframes holo-sweep {
+  0%, 100% {
+    transform: translate3d(-130%, -30%, 0) rotate(22deg);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.45;
+  }
+  60% {
+    transform: translate3d(180%, 30%, 0) rotate(22deg);
+    opacity: 0;
+  }
+}
+
+.animate-holo-sweep {
+  animation: holo-sweep 7s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+  .animate-ambient-glow,
+  .animate-ambient-glow-alt,
+  .animate-grid-drift,
+  .animate-particle,
+  .animate-float-portrait,
+  .animate-float-name,
+  .animate-float-win-1,
+  .animate-float-win-2,
+  .animate-float-win-3,
+  .animate-float-vertical,
+  .animate-float-horizontal,
+  .animate-float-orbit,
+  .animate-border-spin,
+  .animate-holo-sweep {
+    animation: none !important;
+  }
+  .hero-name-sheen {
+    animation: none !important;
+    background-position: 50% 50%;
+  }
+  .card-sheen::after {
+    display: none;
+  }
+  .btn-tactile:hover,
+  .btn-tactile:active {
+    transform: none !important;
   }
   *, *::before, *::after {
     animation-duration: 0.01ms !important;

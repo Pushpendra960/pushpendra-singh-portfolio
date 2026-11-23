@@ -7,14 +7,21 @@ import { Experience } from '../components/Experience';
 import { Certifications } from '../components/Certifications';
 import { Achievements } from '../components/Achievements';
 import { Education } from '../components/Education';
+import { BeyondTheCode } from '../components/BeyondTheCode';
+import { PersonalPhotography } from '../components/PersonalPhotography';
 import { Contact } from '../components/Contact';
 import { CertificateModal, LightboxItem } from '../components/CertificateModal';
+import { PhotoLightboxModal } from '../components/PhotoLightboxModal';
 import { CredentialItem } from '../data/certifications';
+import { PhotoItem } from '../data/gallery';
 
 export function Home() {
   const [activeLightbox, setActiveLightbox] = useState<LightboxItem | null>(null);
   const [credentialList, setCredentialList] = useState<CredentialItem[]>([]);
   const [credentialIndex, setCredentialIndex] = useState<number>(-1);
+
+  const [activePhoto, setActivePhoto] = useState<PhotoItem | null>(null);
+  const [photoCollection, setPhotoCollection] = useState<PhotoItem[]>([]);
 
   const openStandaloneDocument = (item: LightboxItem) => {
     setCredentialList([]);
@@ -54,6 +61,11 @@ export function Home() {
     });
   };
 
+  const openPhotoLightbox = (photo: PhotoItem, collection: PhotoItem[]) => {
+    setPhotoCollection(collection);
+    setActivePhoto(photo);
+  };
+
   return (
     <>
       <main>
@@ -65,6 +77,8 @@ export function Home() {
         <Achievements onOpenDocument={openStandaloneDocument} />
         <Certifications onSelectCredential={openCredentialLightbox} />
         <Education />
+        <BeyondTheCode onOpenPhoto={openPhotoLightbox} />
+        <PersonalPhotography onOpenPhoto={openPhotoLightbox} />
         <Contact />
       </main>
 
@@ -75,6 +89,13 @@ export function Home() {
         hasNext={credentialIndex >= 0 && credentialIndex < credentialList.length - 1}
         onPrev={() => goToCredential(credentialIndex - 1)}
         onNext={() => goToCredential(credentialIndex + 1)}
+      />
+
+      <PhotoLightboxModal
+        photo={activePhoto}
+        collection={photoCollection}
+        onClose={() => setActivePhoto(null)}
+        onSelectPhoto={(nextPhoto) => setActivePhoto(nextPhoto)}
       />
     </>
   );
